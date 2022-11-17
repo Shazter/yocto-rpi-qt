@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="c40ac16d79026169639f47be76a3f7b9d8b5178e"
+           upstream="hardknott"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="422b96cb2b6116442be1f40dfb5bd77447d1219e"
+           upstream="hardknott"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="f72a73b42fa740130b388ba8555cdbefdee8d37d"
+           upstream="hardknott"
+           path="sources/meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="810d6d842f103eb59f18b06426106462b15de7e2"
+           upstream="hardknott"
+           path="sources/meta-python2"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="refs/tags/v6.2.4"
+           upstream="6.2.4"
+           path="sources/meta-qt6"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="b4ec97e4eb8e36efd1f7e2f8ae020a9e55cfc239"
+           upstream="hardknott"
+           path="sources/meta-raspberrypi"/>
+ 
+</manifest>
